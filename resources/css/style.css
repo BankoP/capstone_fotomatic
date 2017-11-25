@@ -26,6 +26,8 @@ html {
 
 .image-container img {
   display: block;
+
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -47,6 +49,7 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  color: #FFF;
 }
 
 header .logo {
@@ -66,6 +69,8 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  /*peter*/
+  font-family: "Roboto-Regular";
 }
 
 header .icon {
@@ -88,7 +93,7 @@ header .mobile {
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   header .mobile ul {
@@ -116,6 +121,7 @@ header .mobile {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  background-image: url("../images/banner-landingpage.jpg");
   height: 43.5rem;
 }
 
@@ -124,6 +130,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  /*peter*/
+  margin: 170px 0 0 100px;
 }
 
 #sign-up-cta .content {
@@ -193,6 +201,7 @@ header .mobile {
   }
 }
 
+
 @media only screen and (max-width: 450px) {
   #sign-up-section {
     height: 20rem;
@@ -205,6 +214,40 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+  /*peter*/
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  /*peter*/
+  .main-content {
+    position: relative;
+    top: 40px;
+  }
+
+  #features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    /*peter*/
+    padding-bottom: 40px;
+  }
+
+  #sign-up-section {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #sign-up-cta .content {
+    width: 50%;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: white;
+   }
 }
 
 /* Features Section */
@@ -214,6 +257,8 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  /*peter*/
+  padding-bottom: 40px;
 }
 
 .feature {
@@ -222,9 +267,16 @@ header .mobile {
   margin: 0px 1.25rem;
   background-color: white;
 }
-
+/*
 .feature .image-container {
   width: 90%;
+  height: 65%;
+  margin: 0 auto;
+}
+*/
+/*peter*/
+.feature .image-container img{
+  width: 100%;
   height: 65%;
   margin: 0 auto;
 }
@@ -234,6 +286,8 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  /*peter*/
+  margin-top: 40px;
 }
 
 .feature h3 {
@@ -273,6 +327,9 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  /*peter*/
+  display: flex;
+  flex-direction: column;
 }
 
 #filters-section .content {
@@ -293,9 +350,16 @@ header .mobile {
   color: white;
 }
 
-#filters-section .images-container {
+#filters-section .images-container{
   max-width: 100%;
   padding: 0 1%;
+/*peter */
+  display: flex;
+}
+
+/*peter*/
+#filters-section .images-container img{
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -334,11 +398,13 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+/*peter  content > .content */
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+/*peter  quote > .quote */
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -347,7 +413,8 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+/* peter quote-citation > .quote-citation*/
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
